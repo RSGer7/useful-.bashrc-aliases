@@ -1,0 +1,53 @@
+
+#==========================
+#==    MPV ALIASES:      ==
+#==========================
+
+#opens terminal with perfect size for mpv audio, closes current terminal
+alias mpvwin='gnome-terminal --geometry=1000x350 --working-directory=/home/user1/Music; exit'
+
+#====================================
+#==   YT-DLP ALIASES:              ==
+#====================================
+
+alias dlpaud='yt-dlp --extract-audio --audio-format best --audio-quality 0 -o "%(title)s - %(channel)s.%(ext)s"'
+alias dlpfhd='yt-dlp -i -f "bestvideo[height<=1080]+bestaudio" -o "%(title)s - %(channel)s.%(ext)s"'
+alias dlphd='yt-dlp -i -f "bestvideo[height<=720]+bestaudio" -o "%(title)s - %(channel)s.%(ext)s"'
+
+#==========================
+#==   CUSTOM ALIASES:    ==
+#==========================
+
+alias updateall='sudo apt update && sudo apt upgrade'
+
+#misc
+alias nanbash='nano .bashrc'
+#no "&" needed apparently
+alias codbash='codium .bashrc'
+alias gedit='gedit --new-window'
+alias sn='apt search -n'
+#terminal reboot
+alias termrb='gnome-terminal; exit'
+
+alias des='cd ~/Desktop'
+alias doc='cd ~/Documents'
+alias dwn='cd ~/Downloads'
+alias tojo='cd ~/Desktop/myfolders/journal; ls'
+
+#network-related shortcuts
+alias wifioff='nmcli radio wifi off'
+alias wifion='nmcli radio wifi on'
+alias activewifi='nmcli connection show --active'
+alias statuswifi='nmcli radio wifi'
+#wifi off, then confirm by printing status
+alias cwifioff='nmcli radio wifi off; nmcli radio wifi'
+#wifi on, then confirm by printing status
+alias cwifion='nmcli radio wifi on; nmcli radio wifi'
+#list all wifis around you
+alias wifiaround='nmcli device wifi list'
+#show all saved wifis:
+alias savednetworks='nmcli connection'
+
+#move cursor faster with keys, e.g. for h,j,k,l in Vim
+xset r rate 300 50
+
