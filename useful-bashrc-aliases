@@ -32,7 +32,6 @@ alias termrb='gnome-terminal; exit'
 alias des='cd ~/Desktop'
 alias doc='cd ~/Documents'
 alias dwn='cd ~/Downloads'
-alias tojo='cd ~/Desktop/myfolders/journal; ls'
 
 #network-related shortcuts
 alias wifioff='nmcli radio wifi off'
